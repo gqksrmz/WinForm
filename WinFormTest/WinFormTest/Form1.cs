@@ -40,6 +40,12 @@ namespace WinFormTest
                     }
                 }
             }
+            IEnumerable enumerable = new ArrayList();
+            enumerable = Enumerable.Range(0, 100);
+            foreach (var item in enumerable)
+            {
+                Console.WriteLine(item);
+            }
             var sequence = Enumerable.Range(0, 100);
             foreach (var item in sequence)
             {
