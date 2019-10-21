@@ -2,6 +2,7 @@
 using DSkin.DirectUI;
 using DSkin.Forms;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormTest
 {
@@ -37,6 +39,20 @@ namespace WinFormTest
                         nodenode.Nodes.Add(nodenodenode);
                     }
                 }
+                ArrayList[] ChartData = new ArrayList[2];
+                ChartData[0] = new ArrayList();
+                Random r = new Random();
+                for (int j = 0; j < 7; j++)
+                {
+                    ChartData[0].Add(r.Next(0,10));
+                }
+                ChartData[1] = new ArrayList();
+                for (int j = 0; j < 7; j++)
+                {
+                    ChartData[1].Add(r.Next(0,10));
+                }
+                dSkinChart1.DataSource = ChartData;
+               
             }
         }
     }
