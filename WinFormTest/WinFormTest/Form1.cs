@@ -42,6 +42,7 @@ namespace WinFormTest
             }
             IEnumerable enumerable = new ArrayList();
             enumerable = Enumerable.Range(0, 100);
+            Console.WriteLine(enumerable.GetEnumerator().Current); 
             foreach (var item in enumerable)
             {
                 Console.WriteLine(item);
