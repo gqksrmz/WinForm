@@ -39,20 +39,11 @@ namespace WinFormTest
                         nodenode.Nodes.Add(nodenodenode);
                     }
                 }
-                ArrayList[] ChartData = new ArrayList[2];
-                ChartData[0] = new ArrayList();
-                Random r = new Random();
-                for (int j = 0; j < 7; j++)
-                {
-                    ChartData[0].Add(r.Next(0,10));
-                }
-                ChartData[1] = new ArrayList();
-                for (int j = 0; j < 7; j++)
-                {
-                    ChartData[1].Add(r.Next(0,10));
-                }
-                dSkinChart1.DataSource = ChartData;
-               
+            }
+            var sequence = Enumerable.Range(0, 100);
+            foreach (var item in sequence)
+            {
+                Console.WriteLine(item);
             }
         }
     }
