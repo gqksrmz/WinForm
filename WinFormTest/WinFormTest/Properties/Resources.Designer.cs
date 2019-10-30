@@ -59,15 +59,5 @@ namespace WinFormTest.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        internal static System.Drawing.Bitmap 形状_4667_拷贝 {
-            get {
-                object obj = ResourceManager.GetObject("形状_4667_拷贝", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
