@@ -31,6 +31,7 @@
             this.dSkinButton1 = new DSkin.Controls.DSkinButton();
             this.dSkinTreeView1 = new DSkin.Controls.DSkinTreeView();
             this.dSkinBaseControl1 = new DSkin.Controls.DSkinBaseControl();
+            this.dSkinTabBar1 = new DSkin.Controls.DSkinTabBar();
             ((System.ComponentModel.ISupportInitialize)(this.dSkinTreeView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             this.dSkinButton1.HoverColor = System.Drawing.Color.Empty;
             this.dSkinButton1.HoverImage = null;
             this.dSkinButton1.IsPureColor = false;
-            this.dSkinButton1.Location = new System.Drawing.Point(61, 37);
+            this.dSkinButton1.Location = new System.Drawing.Point(38, 55);
             this.dSkinButton1.Name = "dSkinButton1";
             this.dSkinButton1.NormalImage = null;
             this.dSkinButton1.PressColor = System.Drawing.Color.Empty;
@@ -74,11 +75,22 @@
             this.dSkinBaseControl1.TabIndex = 2;
             this.dSkinBaseControl1.Text = "dSkinBaseControl1";
             // 
+            // dSkinTabBar1
+            // 
+            this.dSkinTabBar1.EnabledLayoutContent = true;
+            this.dSkinTabBar1.Location = new System.Drawing.Point(94, 150);
+            this.dSkinTabBar1.Name = "dSkinTabBar1";
+            this.dSkinTabBar1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.dSkinTabBar1.Size = new System.Drawing.Size(100, 100);
+            this.dSkinTabBar1.TabIndex = 3;
+            this.dSkinTabBar1.Text = "dSkinTabBar1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dSkinTabBar1);
             this.Controls.Add(this.dSkinBaseControl1);
             this.Controls.Add(this.dSkinTreeView1);
             this.Controls.Add(this.dSkinButton1);
@@ -94,6 +106,7 @@
         private DSkin.Controls.DSkinButton dSkinButton1;
         private DSkin.Controls.DSkinTreeView dSkinTreeView1;
         private DSkin.Controls.DSkinBaseControl dSkinBaseControl1;
+        private DSkin.Controls.DSkinTabBar dSkinTabBar1;
     }
 }
 
